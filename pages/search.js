@@ -19,9 +19,9 @@ function Search({ searchResults }) {
   return (
     <div>
       <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`} />
-      <main className="flex" />
-      <section>
-        <p className="text-xs">`300+ stays {range} for {noOfGuests} number of guests`</p>
+      <main className="flex p-5" />
+      <section className="p-5">
+        <p className="text-xs py-5">`300+ stays {range} for {noOfGuests} number of guests`</p>
         <h1 className="text-3xl font-semibold mb-6">Stays in {location}</h1>
 
         <div className="hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap">

@@ -78,11 +78,14 @@ const Header = ({ placeholder }) => {
           rangeColors={["#FD5B61"]}
           onChange={handleSelect} />
 
-        <div className="flex items-center border-b mb-4">
+        <div className="flex space-x-4 justify-between border-b mb-4">
           <h2 className="text-2xl font-semibold">Number of Guests</h2>
 
-          <UserIcon className="h-5" />
-          <input type="number" value={noOfGuests} onChange={(e) => setNoOfGuests(e.target.value)} min={1} className="w-12 pl-2 text-lg outline-none text-red-500" />
+          <div className="flex items-center self-end">
+            <UserIcon className="h-5" />
+            <input type="number" value={noOfGuests} onChange={(e) => setNoOfGuests(e.target.value)} min={1} className="w-12 pl-2 text-lg outline-none text-red-500 " />
+          </div>
+
         </div>
 
         <div className="flex">
